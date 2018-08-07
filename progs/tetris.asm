@@ -8,7 +8,7 @@
 	aLevel EQU #25
 	aRandom EQU #26
 	aNextPiceId EQU #27
-	aPice EQU #28                   ;4B
+	aPice EQU #28
 	dropDelay EQU #20
 	tickerDelay EQU #4
 	microvisionScrollDelay EQU #3
@@ -746,22 +746,3 @@ visionText:
 	db #10101101b, #00011011b, #01111101b, #10100011b
 	db #11001101b, #00011011b, #01100001b, #10010110b
 	db #10001100b, #11110011b, #01111101b, #10001100b
-
-
-	
-;   potenciometer		
-;      clr a
-;      mov T, a
-;      mov r1, #31
-;      mov a, #0FFh
-;      STRT CNT
-;      outl P2, a
- ; test_loop0:
-;   dec r1
-;      jnt1 test_loop0
-;      STOP TCNT	
-;      mov r0, #43
-;      mov a, r1
-;      mov @r0, a
-;      clr a
-;      outl P2, a
