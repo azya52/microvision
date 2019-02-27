@@ -1126,7 +1126,7 @@ tetrisTheme
 	tcy x0SpeakerTone
 
 	ldp tetrisThemePart8
-	a9aac
+	a5aac
 	br tetrisThemePart8
 	ldp tetrisThemePart7
 	iac
@@ -1466,7 +1466,6 @@ shiftMicroVision_loopForYToLeft
 	dyn
 	br shiftMicroVision_loopForYToLeft
 	
-	lcall redrawLCD2To13row
 	lcall redrawLCD2To13row
 	tcy 13
 	
